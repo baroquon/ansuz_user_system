@@ -1,23 +1,21 @@
 <div class="login-block">
   <h3>Login</h3>
   <% form_tag session_path do -%>
-  <p class="login-session email-login"><label for="login">Login:</label>
-  <%= text_field_tag 'login' %></p>
-  <span class='float-clear'> </span>
-  <p class="login-session"><label for="password">Password:</label>
-  <%= password_field_tag 'password' %></p>
-  
-  <p class='remember-submit'><%= submit_tag 'Log In' %></p>
-  <br class='clear' />
-  <p class='remember-submit'>
-    <label for="remember_me">Remember me:</label>
-    <%= check_box_tag 'remember_me' %>
-  </p>
-  <br class='clear' />
+    <p class="login-session email-login">
+      <label for="login">Login:</label>
+      <br />
+      <%= text_field_tag 'login' %>
+      <br />
+      <label for="password">Password:</label>
+      <br />
+      <%= password_field_tag 'password' %> 
+      <br />
+      <span class='remember-submit'><%= submit_tag 'Log In' %></span>
+      <br />
+      <label for="remember_me">Remember me:</label>
+      <%= check_box_tag 'remember_me' %>
+      <br />
+      <a href='/login'>Forgot Your Password?</a>
+    </p>
   <% end -%>
-  <h4 class='forgot'>Forgot Your Password?</h4>
-  <br />
-  <p class='register-blurb'>
-    No problem. To receive your password via email, please enter the email address that you registered with below.
-  </p>
 </div>
