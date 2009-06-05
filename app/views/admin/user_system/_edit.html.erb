@@ -1,0 +1,13 @@
+<% remote_form_for :page_plugin, plugin, :url => admin_proto_page_plugin_path(plugin), :html => { :method => :put } do |f| %>
+  <div class='fullwidth'>
+    <table class='form-table'>
+      <tr>
+        <td>
+          Login Module
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br />
+  <%= submit_tag "Update Login Module" %>
+<% end %>

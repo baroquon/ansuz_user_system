@@ -1,0 +1,3 @@
+<div id="<%= dom_id(plugin_module) -%>" class='login'>
+  <%= render :partial => "sessions/login" -%>
+</div>

@@ -1,0 +1,15 @@
+module Ansuz
+  module JAdams
+    class UserSystem < ProtoPagePlugin
+      has_settings
+
+      def view_partial
+        '/admin/login_plugin/login_plugin'
+      end
+
+      def self.admin_partial
+        '/admin/login_plugin/edit'
+      end
+    end
+  end
+end
