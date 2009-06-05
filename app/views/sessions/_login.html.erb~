@@ -1,5 +1,6 @@
 <%- if !logged_in? %> 
   <div class="login-block">
+    <h3>Login</h3>
     <% form_tag session_path do -%>
       <p class="login-session email-login">
         <label for="login">Login:</label>
