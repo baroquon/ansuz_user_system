@@ -22,7 +22,11 @@
 <% else -%>
   <div class="login-block">
     <p class="login-session email-login">
-      Your are logged in.
+      Your are logged in as
+      <%= current_user %>
+      <br />
+      Member Since:
+      <%= current_user.created_at.to_s(:short) %>
       <br />
       <a href='/logout'>logout</a>
     </p>
