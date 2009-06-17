@@ -16,18 +16,15 @@
       <label for="remember_me"> Remember me</label>
     </p>
   <% end -%>
-  <p>
-    <strong>Forgot Your Password?</strong>
-  <br />
+  <h3 class='forgot'>Forgot Your Password?</h3>
+  <p class='register-blurb'>
     No problem. To receive your password via email, please enter the email address that you registered with below.
   </p>
   <% form_tag :controller => 'sessions', :action => 'send_activation_code' do -%>
     <p class="login-session">
       <label for="email">Email Address:</label>
-      <br />
       <%= text_field_tag :email -%>
-      <br />
-      <%= submit_tag "Submit" -%>
     </p>
+    <p class='remember-submit'><%= submit_tag "Submit" -%></p>
   <% end -%>
 </div>
